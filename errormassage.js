@@ -34,7 +34,7 @@ const getErrorMEssages=(input, criteria)=>{
         ...acc,
         ...criteria[fieldName].map(test=>
             test(input[fieldName])),
-    ] ,[]).filter(message=>message);
+    ] ,[]).filter(messages=>messages);
 }
 
 console.log(getErrorMEssages(currentInputValues, inputCriteria))
